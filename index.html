@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Fornecedor/Produto</title>
 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
@@ -14,145 +15,175 @@
 </head>
 
 <body>
-    <div class="fluig-style-guide">
-        <h1>CADASTRO FORNECEDOR/PRODUTO</h1>
+    <div class="mx-5 mt-4 mb-5">
+        <h3 class="text-center mb-3">CADASTRO FORNECEDOR/PRODUTO</h3>
 
-        <form>
-            <caption>Formulário de Cadastro</caption>
-            <div class="row">
-                <div class="col-md-8">
-                    <label for="razao_social" >Razão Social: </label>
-                    <input type="text" id="razao_social" name="razao_social" required>
+
+        <div class=" rounded bg-primary text-white p-1 mb-0">
+            <h5>Dados do Fornecedor</h5>
+        </div>
+
+        <div class="border rounded border-dark p-4 mt-0">
+
+            <form>
+                <div class="row mb-3">
+                    <div class="col-md-8">
+                        <label for="razao_social" style="display: block">Razão Social: </label>
+                        <input type="text" class="form-control" id="razao_social" name="razao_social" required>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="cnpj" style="display: block">CNPJ: </label>
+                        <input type="text" class="form-control" id="cnpj" name="cnpj" required>
+                    </div>
                 </div>
+                <div class="row mb-3">
+                    <div class="col-md-8">
+                        <label for="nome_fantasia" style="display: block">Nome Fantasia: </label>
+                        <input type="text" class="form-control" id="nome_fantasia" name="nome_fantasia" required>
+                    </div>
 
-                <div class="col-md-4">
-                    <label for="cnpj" >CNPJ: </label>
-                    <input type="text" id="cnpj" name="cnpj" required>
+                    <div class="col-md-4">
+                        <label for="inscricao_estadual" style="display: block">Inscrição Estadual: </label>
+                        <input type="text" class="form-control" id="inscricao_estadual" name="inscricao_estadual">
+                    </div>
                 </div>
-            </div>
-                <div>
-                    <label for="nome_fantasia">Nome Fantasia: </label>
-                    <input type="text" id="nome_fantasia" name="nome_fantasia" required>
+                <div class="row mb-3">
+                    <div class="col-md-8">
+                        <label for="cep" style="display: block">CEP: </label>
+                        <input type="text" class="form-control" id="cep" name="cep" required>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="inscricao_municipal" style="display: block">Inscrição Municipal: </label>
+                        <input type="text" class="form-control" id="inscricao_municipal" name="inscricao_municipal">
+                    </div>
                 </div>
+                <div class="row mb-3">
+                    <div class="col-md-8">
+                        <label for="endereco" style="display: block">Endereço: </label>
+                        <input type="text" class="form-control" id="endereco" name="endereco" required>
+                    </div>
 
-                <div>
-                    <label for="inscricao_estadual">Inscrição Estadual: </label>
-                    <input type="text" id="inscricao_estadual" name="inscricao_estadual">
+                    <div class="col-md-4">
+                        <label for="numero" style="display: block">Número: </label>
+                        <input type="text" class="form-control" id="numero" name="numero">
+                    </div>
                 </div>
-
-                <div>
-                    <label for="cep">CEP: </label>
-                    <input type="text" id="cep" name="cep" required>
+                <div class="mb-3">
+                    <label for="complemento" style="display: block">Complemento: </label>
+                    <input type="text" class="form-control" id="complemento" name="complemento">
                 </div>
+                <div class="row mb-3">
+                    <div class="col-md-5">
+                        <label for="bairro" style="display: block">Bairro: </label>
+                        <input type="text" class="form-control" id="bairro" name="bairro" required>
+                    </div>
 
-                <div>
-                    <label for="inscricao_municipal">Inscrição Municipal: </label>
-                    <input type="text" id="inscricao_municipal" name="inscricao_municipal">
+                    <div class="col-md-4">
+                        <label for="municipio" style="display: block">Município: </label>
+                        <input type="text" class="form-control" id="municipio" name="municipio" required>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="estado" style="display: block">Estado: </label>
+                        <input type="text" class="form-control" id="estado" name="estado" required>
+                    </div>
                 </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="contato" style="display: block">Nome da pessoa de contato: </label>
+                        <input type="text" class="form-control" id="contato" name="contato" required>
+                    </div>
 
-                <div>
-                    <label for="endereco">Endereço: </label>
-                    <input type="text" id="endereco" name="endereco" required>
+                    <div class="col-md-3">
+                        <label for="telefone" style="display: block">Telefone: </label>
+                        <input type="tel" class="form-control" id="telefone" name="telefone" required>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="email" style="display: block">E-mail: </label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
                 </div>
-
-                <div>
-                    <label for="numero">Número: </label>
-                    <input type="text" id="numero" name="numero">
-                </div>
-
-                <div>
-                    <label for="complemento">Complemento: </label>
-                    <input type="text" id="complemento" name="complemento">
-                </div>
-
-                <div>
-                    <label for="bairro">Bairro: </label>
-                    <input type="text" id="bairro" name="bairro" required>
-                </div>
-
-                <div>
-                    <label for="municipio">Município: </label>
-                    <input type="text" id="municipio" name="municipio" required>
-                </div>
-
-                <div>
-                    <label for="estado">Estado: </label>
-                    <input type="text" id="estado" name="estado" required>
-                </div>
+            </form>
+        </div>
 
 
-                <div>
-                    <label for="contato">Nome da pessoa de contato: </label>
-                    <input type="text" id="contato" name="contato" required>
-                </div>
+        <div class=" rounded bg-primary text-white p-1 mt-4">
+            <h5>Produtos</h5>
+        </div>
+        <div class="border rounded border-dark p-2">
+            <table id="tabela_produtos" class="table table-borderless">
 
-                <div>
-                    <label for="telefone">Telefone: </label>
-                    <input type="tel" id="telefone" name="telefone" required>
-                </div>
-
-                <div>
-                    <label for="email">E-mail: </label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <div>
-                    <button type="submit">Enviar</button>
-                </div>
-           
-        </form>
+                <tbody>
+                    <tr>
+                        <td class="text-right">
+                            <button onclick="excluirProduto(this)" class="btn btn-danger">Apagar</button>
+                        </td>
 
 
-        <table id="tabela_produtos">
-            <caption>Produtos</caption>
-            <thead>
-                <tr>
-                    <!-- alterar depois -->
-                <tr>
-                    <th colspan="N">Produto 1</th>
-                </tr>
-                <td>
-                    <form>
-                        <div>
-                            <label for="produto">Produto: </label>
-                            <input type="text" id="produto" name="produto" required>
-                        </div>
-                        <div>
-                            <label for="unidade_medida">Unidade de Medida: </label>
-                            <input type="text" id="unidade_medida" name="unidade_medida" required>
-                        </div>
-                        <div>
-                            <label for="quantidade">Quantidade em Estoque: </label>
-                            <input type="number" id="quantidade" name="quantidade" min="0" required
-                                oninput="calcularTotal()">
-                        </div>
-                        <div>
-                            <label for="valor_unitario">Valor Unitário (R$): </label>
-                            <input type="number" id="valor_unitario" name="valor_unitario" min="0" step="0.01" required
-                                oninput="calcularTotal()">
-                        </div>
-                        <div>
-                            <label for="valor_total">Valor Total (R$): </label>
-                            <input type="number" id="valor_total" name="valor_total" readonly required>
-                        </div>
-                    </form>
-                </td>
+                        <td>Produto 1</td>
 
-                <td>
-                    <button onclick="excluirProduto(this)">Excluir</button>
-                </td>
-                </tr>
+                    </tr>
+                    <tr>
+                        <td>
 
-                <tr>
-                    <td colspan="N">
-                        <button onclick="adicionarProduto()">Adicionar Produto</button>
+                        </td>
+                        <td>
+                            <div class="row">
+                                <div class="col-md-8 mb-3">
+                                    <label for="produto" class="text-sm">Produto</label>
+                                    <input type="text" class="form-control" id="produto" name="produto" required>
+                                </div>
+                            </div>
+
+                            
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label for="unidade_medida" style="font-size: 13px">UND. Medida</label>
+                                    <input type="text" class="form-control" id="unidade_medida" name="unidade_medida"
+                                        required>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <label for="quantidade" style="font-size: 13px">QTDE em Estoque</label>
+                                    <input type="number" class="form-control" id="quantidade" name="quantidade" min="0"
+                                        required oninput="calcularTotal()">
+                                </div>
+
+                                <div class="col-md-2">
+                                    <label for="valor_unitario" style="font-size: 13px">Valor Unitário</label>
+                                    <input type="number" class="form-control" id="valor_unitario" name="valor_unitario"
+                                        min="0" step="0.01" required oninput="calcularTotal()">
+                                </div>
+
+                                <div class="col-md-2">
+                                    <label for="valor_total" style="font-size: 13px">Valor Total</label>
+                                    <input type="number" class="form-control" id="valor_total" name="valor_total"
+                                        readonly required>
+                                </div>
+                            </div>
+                        </td>
+
+                    </tr>
+                    <td colspan="5">
+                        <button onclick="adicionarProduto()" class="btn btn-success w-100">Adicionar
+                            Produto</button>
                     </td>
-                </tr>
-            </thead>
+                </tbody>
+            </table>
+        </div>
         </table>
+    </div>
 
+
+
+    <div class=" rounded bg-primary text-white p-1 mt-4">
+        <h5>Anexos</h5>
+    </div>
+    <div class="border rounded border-dark p-4 mt-0">
         <table>
-            <caption>Anexos</caption>
             <thead>
                 <tr>
                     <th>Itens</th>
@@ -169,6 +200,7 @@
         </table>
 
         <button onclick="adicionarAnexo()">Incluir Anexo</button>
+    </div>
     </div>
 </body>
 
