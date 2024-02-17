@@ -10,5 +10,5 @@ Bootstrap
 
 CSS
 
-jQuery 3.5.1
+jQuery 
 
